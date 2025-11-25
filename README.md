@@ -1,5 +1,5 @@
 # Line Count Utility (MATLAB)
-
+[![View Count lines in MATLAB scripts for project folder on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/182673-count-lines-in-matlab-scripts-for-project-folder) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=preethamam/Count-Lines-MATLAB-Scripts)
 Overview
 --------
 
