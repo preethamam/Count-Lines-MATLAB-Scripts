@@ -77,6 +77,7 @@ Heuristics and limitations
   lines.
 - Block C/C++ comments using `/* ... */` are tracked and counted as comment lines.
 - Block MATLAB comments using `%{ ... %}` are tracked and counted as comment lines.
+- Count “mixed” lines (code + inline comment).
 - Inline comments on the same line as code are counted as code lines.
 - The function uses simple heuristics and may misclassify complex constructs.
 
