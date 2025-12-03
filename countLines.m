@@ -256,6 +256,20 @@ for k = 1:total
         continue;
     end
 
+    % --- mixed MATLAB inline comment (code + %) ---
+    if contains(L, '%') && ~startsWith(L, '%')
+        code = code + 1;
+        comments = comments + 1;
+        continue;
+    end
+
+    % --- mixed C/C++ inline comment (code + //) ---
+    if contains(L, '//') && ~startsWith(L, '//')
+        code = code + 1;
+        comments = comments + 1;
+        continue;
+    end
+
     % --- otherwise: code line ---
     code = code + 1;
 end
