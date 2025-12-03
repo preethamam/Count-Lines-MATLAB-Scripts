@@ -237,6 +237,25 @@ for k = 1:total
         continue;
     end
 
+    % --- MATLAB block comment begin (%{) ---
+    if contains(L, '%{')
+        comments = comments + 1;
+        inBlockComment = true;
+        if contains(L, '%}')
+            inBlockComment = false;
+        end
+        continue;
+    end
+
+    % --- inside MATLAB %{ ... %} block comment ---
+    if inBlockComment
+        comments = comments + 1;
+        if contains(L, '%}')
+            inBlockComment = false;
+        end
+        continue;
+    end
+
     % --- otherwise: code line ---
     code = code + 1;
 end
